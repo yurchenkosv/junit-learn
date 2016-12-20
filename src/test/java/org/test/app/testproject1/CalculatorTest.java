@@ -41,9 +41,9 @@ public class CalculatorTest {
   
   @Test
   public void divisionTest(){
+      thrown.expect(ArithmeticException.class);
       Calculator calculator = new Calculator();
       int div = calculator.division(10, 0);
-      thrown.expect(Exception.class);
   }
 }
 
