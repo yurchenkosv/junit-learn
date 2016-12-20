@@ -16,10 +16,11 @@ public class Calculator {
       sum += Integer.valueOf(summand);
     return sum;
   }
-    public int minus(String expression){
-        int min = 0;
-        for (String summand: expression.split("\\-"))
-            min -= Integer.valueOf(summand);
-        return min;
+    public int minus(int a, int b){
+        return a-b;
+    }
+    
+    public int umnoj(int a, int b){
+        return a*b;
     }
 }

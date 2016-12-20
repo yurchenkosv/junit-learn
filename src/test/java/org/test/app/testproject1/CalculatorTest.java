@@ -23,8 +23,15 @@ public class CalculatorTest {
   @Test
   public void minusTest(){
       Calculator calculator = new Calculator();
-      int minus = calculator.minus("5-2");
+      int minus = calculator.minus(5,2);
       assertEquals(3, minus);
+  }
+  
+  @Test
+  public void umnojTest(){
+      Calculator calculator = new Calculator();
+      int umnoj = calculator.umnoj(5, 2);
+      assertEquals(10, umnoj);
   }
   
 }
