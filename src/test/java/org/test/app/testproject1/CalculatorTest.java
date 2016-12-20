@@ -37,11 +37,11 @@ public class CalculatorTest {
   }
   
   @Rule
-  public ExpectedException thrown = new ExpectedException.none();
+  public ExpectedException thrown = ExpectedException.none();
   
   public void divisionTest(){
       Calculator calculator = new Calculator();
-      int del = calculator.division(10, 0);
+      int div = calculator.division(10, 0);
       thrown.expect(Exception.class);
   }
 }
