@@ -14,10 +14,18 @@ import org.junit.Test;
  */
 public class CalculatorTest {
   @Test
-  public void evaluatesExpression() {
+  public void evaluateTest() {
     Calculator calculator = new Calculator();
     int sum = calculator.evaluate("1+2+3");
     assertEquals(6, sum);
   }
+  
+  @Test
+  public void minusTest(){
+      Calculator calculator = new Calculator();
+      int minus = calculator.minus("5-2");
+      assertEquals(3, minus);
+  }
+  
 }
 
