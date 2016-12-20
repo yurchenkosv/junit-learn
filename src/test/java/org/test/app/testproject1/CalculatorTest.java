@@ -7,7 +7,9 @@ package org.test.app.testproject1;
  */
 
 import static org.junit.Assert.assertEquals;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 /**
  *
  * @author yurchenko.s
@@ -34,5 +36,13 @@ public class CalculatorTest {
       assertEquals(10, umnoj);
   }
   
+  @Rule
+  public ExpectedException thrown = new ExpectedException.none();
+  
+  public void divisionTest(){
+      Calculator calculator = new Calculator();
+      int del = calculator.division(10, 0);
+      thrown.expect(Exception.class);
+  }
 }
 
