@@ -39,6 +39,7 @@ public class CalculatorTest {
   @Rule
   public ExpectedException thrown = ExpectedException.none();
   
+  @Test
   public void divisionTest(){
       Calculator calculator = new Calculator();
       int div = calculator.division(10, 0);
