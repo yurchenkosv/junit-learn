@@ -44,6 +44,7 @@ public class CalculatorTest {
       thrown.expect(ArithmeticException.class);
       Calculator calculator = new Calculator();
       int div = calculator.division(10, 0);
+      assertEquals ( 8, div );
   }
 }
 
